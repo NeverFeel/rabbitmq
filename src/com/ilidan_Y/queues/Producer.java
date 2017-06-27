@@ -35,7 +35,7 @@ public class Producer {
          *                       exclusive：声明一个独占式队列，占据一个连接
          *                       autoDelete：声明一个自动删除队列，队列不用时由服务器自动删除
 		 */
-		channel.queueDeclare(TASK_QUEUE_NAME, false, false, false, null);
+		channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
 		for(int i=0; i<5; i++){
 			String message = "this is messgae "+i;
 			channel.basicPublish("", TASK_QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes());

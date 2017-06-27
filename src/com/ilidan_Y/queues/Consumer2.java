@@ -19,7 +19,7 @@ import com.rabbitmq.client.Envelope;
  *
  */
 public class Consumer2 {
-	private static final String TASK_QUEUE_NAME = "task_queue";
+	private static final String TASK_QUEUE_NAME = "task";
 
 	public static void main(String[] argv) throws Exception {
 		ConnectionFactory factory = new ConnectionFactory();
