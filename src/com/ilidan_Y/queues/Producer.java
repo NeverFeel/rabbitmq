@@ -1,7 +1,6 @@
 package com.ilidan_Y.queues;
 
 import java.io.IOException;
-import java.util.Map;
 import java.util.concurrent.TimeoutException;
 
 import com.rabbitmq.client.Channel;
