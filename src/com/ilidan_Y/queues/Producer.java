@@ -39,7 +39,7 @@ public class Producer {
 		for(int i=0; i<5; i++){
 			String message = "this is messgae "+i;
 			channel.basicPublish("", TASK_QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes());
-			 System.out.println(" sent '" + message + "'");
+			System.out.println(" sent '" + message + "'");
 		}
 		channel.close();
 		connection.close();
